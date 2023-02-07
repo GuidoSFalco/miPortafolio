@@ -1,0 +1,85 @@
+body {
+    background: rgb(231, 231, 231);
+    width: 100vw;
+    height: 100%;
+
+
+    section {
+        width: 100%;
+        height: 300px;
+        padding-inline: 30px;
+        margin-bottom: 60px;
+    }
+
+    section.presentacion {
+        display: flex;
+        padding-left: 200px;
+
+        .imagen {
+            background-image: url("https://i.ibb.co/VqNXbD4/Whats-App-Image-2022-10-19-at-11-31-22.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 90%;
+            width: 300px;
+            height: 100%;
+            border-radius: 80px;
+            margin-right: 60px;
+
+        }
+
+        .introduccion {
+            width: auto;
+            height: 100%;
+            padding: 50px 0;
+
+            .miNombre {
+                
+            }
+
+            .misCapacidades {
+                font-size: 140%;
+
+                .capacidades {
+                    color: rgb(0, 153, 0);
+                }
+
+                .frameworks {
+                    color: rgb(223, 223, 10);
+                }
+            }
+        }
+    }
+
+    section.caracteristicas {
+        background: rgb(255, 255, 255, 0.4);
+        width: 70%;
+        height: auto;
+        text-align: center;
+        margin-inline: auto;
+        padding: 30px;
+        border-radius: 50px;
+
+        .titulo {
+            font-size: 30px;
+        }
+
+        .introduccion {
+
+        }
+    }
+
+
+    section.proyectos {
+
+    }
+
+
+}
+
+ul {
+    // padding: 0;
+}
+
+li {
+    list-style: none;
+}
