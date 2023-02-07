@@ -1,7 +1,7 @@
 body {
     background: rgb(231, 231, 231);
     width: 100vw;
-    height: 100%;
+    height: auto;
 
 
     section {
@@ -13,7 +13,9 @@ body {
 
     section.presentacion {
         display: flex;
-        padding-left: 200px;
+        margin-inline: auto;
+        justify-content: space-around;
+        width: 70%;
 
         .imagen {
             background-image: url("https://i.ibb.co/VqNXbD4/Whats-App-Image-2022-10-19-at-11-31-22.jpg");
@@ -23,7 +25,6 @@ body {
             width: 300px;
             height: 100%;
             border-radius: 80px;
-            margin-right: 60px;
 
         }
 
@@ -32,9 +33,6 @@ body {
             height: 100%;
             padding: 50px 0;
 
-            .miNombre {
-                
-            }
 
             .misCapacidades {
                 font-size: 140%;
@@ -44,9 +42,63 @@ body {
                 }
 
                 .frameworks {
-                    color: rgb(223, 223, 10);
+                    color: rgb(128, 128, 128);
                 }
             }
+        }
+    }
+
+    section.redes {
+        background: rgb(255, 255, 255, 0.4);
+        width: 20%;
+        height: 60px;
+        margin-inline: auto;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-evenly;
+
+        a{
+            margin: auto 0;
+            cursor: pointer;
+            
+
+            div {
+                position: absolute;
+                margin-top: -90px;
+                margin-left: -20px;
+                background: white;
+                width: auto;
+                height: auto;
+                padding: 5px 10px;
+                border-radius: 20px;
+                opacity: 0;
+                transition: .3s;
+                color: black;
+            }
+        }
+        a:hover > i{
+            scale: 1.2;
+        }
+        a:hover > div{
+            transform: translateY(-15px);
+            opacity: 1;
+        }
+
+        i {
+            font-size: 40px;
+            transition: .3s;
+        }
+
+        i.fa-linkedin {
+            color: rgb(26,117,187);
+        }
+
+        i.fa-github {
+            color: black;
+        }
+
+        i.fa-instagram {
+            color: rgb(255,126,70);
         }
     }
 
@@ -63,22 +115,99 @@ body {
             font-size: 30px;
         }
 
-        .introduccion {
-
-        }
     }
 
 
     section.proyectos {
+        background: rgb(68, 184, 68);
+        height: auto;
+        
+        .titulo {
+            height: 20%;
+            font-size: 30px;
+        }
 
+        hr {
+            width: 70px;
+        }
+
+        div.proyectos {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+
+            .proyecto {
+                background: rgb(235, 235, 235);
+                width: 360px;
+                height: 220px;
+                overflow: hidden;
+            
+                span {
+                    background: rgb(194, 194, 194, 0.7);
+                    position: relative;
+                    padding: 0 10px;
+                    top: 30px;
+                    margin-left: -70%;
+                    transition: .3s;
+                    text-decoration: none;
+
+                    a {
+
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+
+                .explicacion {
+                    background: rgb(94, 207, 94);
+                    position: absolute;
+                    width: 360px;
+                    height: 100px;
+                    margin-top: 200px;
+                    transition: .3s;
+                    font-size: 80%;
+                    padding: 5px;
+                    opacity: 0;
+                }
+            }
+
+            .proyecto:hover span {
+                margin-left: 0px;
+            }
+
+            .proyecto:hover .explicacion {
+                opacity: 1;
+            }
+
+            .proyecto1 {
+                background-image: url("https://i.ibb.co/LdDyPHj/captura-app1.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: 50%;
+            }
+
+            .proyecto2 {
+                background-image: url("https://i.ibb.co/vxYMBj2/captura-app2.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: 50%;
+            }
+
+            .proyecto3 {
+                background-image: url("https://i.ibb.co/1zGzLbK/captura-app3.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: 50%;
+            }
+        }
     }
 
 
 }
 
-ul {
-    // padding: 0;
-}
 
 li {
     list-style: none;
