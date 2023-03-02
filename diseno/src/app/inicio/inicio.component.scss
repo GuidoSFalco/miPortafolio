@@ -16,9 +16,9 @@ body {
         margin-inline: auto;
         justify-content: space-around;
         width: 70%;
-
+        
         .imagen {
-            background-image: url("https://i.ibb.co/VqNXbD4/Whats-App-Image-2022-10-19-at-11-31-22.jpg");
+            background-image: url("https://i.ibb.co/K7sD5kW/Whats-App-Image-2023-02-10-at-23-49-02.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: 50% 90%;
@@ -125,10 +125,12 @@ body {
         .titulo {
             height: 20%;
             font-size: 30px;
+            padding-top: 10px;
         }
 
         hr {
             width: 70px;
+            padding-bottom: 30px;
         }
 
         div.proyectos {
@@ -183,24 +185,40 @@ body {
             }
 
             .proyecto1 {
-                background-image: url("https://i.ibb.co/LdDyPHj/captura-app1.png");
+                background-image: url("https://i.ibb.co/sW73Yyf/proyecto1.png");
                 background-size: 100%;
                 background-repeat: no-repeat;
                 background-position: 50%;
             }
 
             .proyecto2 {
-                background-image: url("https://i.ibb.co/vxYMBj2/captura-app2.png");
+                background-image: url("https://i.ibb.co/GQftmyV/proyecto2.png");
                 background-size: 100%;
                 background-repeat: no-repeat;
                 background-position: 50%;
             }
 
             .proyecto3 {
-                background-image: url("https://i.ibb.co/1zGzLbK/captura-app3.png");
+                background-image: url("https://i.ibb.co/xGMm6rL/proyecto3.png");
                 background-size: 100%;
                 background-repeat: no-repeat;
                 background-position: 50%;
+            }
+        }
+
+        .aclaracion {
+            background: rgb(58, 155, 58);
+            width: 60%;
+            height: 60px;
+            display: flex;
+            margin-inline: auto;
+            border-top-right-radius: 30px;
+            border-top-left-radius: 30px;
+
+            p {
+                margin: auto;
+                color: white;
+                font-size: 120%;
             }
         }
     }
